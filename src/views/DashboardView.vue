@@ -15,6 +15,7 @@
 
     <!-- Menu Card -->
     <div class="menu-grid">
+      <!-- Section Film -->
       <RouterLink to="/kelola-film" class="menu-card">
         <span class="menu-icon">🗂️</span>
         <h3>Kelola Film</h3>
@@ -25,6 +26,20 @@
         <span class="menu-icon">➕</span>
         <h3>Tambah Film</h3>
         <p>Input film baru ke database</p>
+      </RouterLink>
+      
+      <!-- Section Genre -->
+      <RouterLink to="/kelola-genre" class="menu-card menu-card--purple">
+        <span class="menu-icon">🎭</span>
+        <h3>Kelola Genre</h3>
+        <p>Lihat, edit, dan hapus data genre</p>
+      </RouterLink>
+
+      <!-- Section Aktor -->
+      <RouterLink to="/kelola-aktor" class="menu-card menu-card--orange">
+        <span class="menu-icon">🌟</span>
+        <h3>Kelola Aktor</h3>
+        <p>Lihat, edit, dan hapus data aktor</p>
       </RouterLink>
 
       <RouterLink to="/" class="menu-card menu-card--blue">
@@ -158,6 +173,8 @@ const handleLogout = async () => {
 
 .menu-card--green { border-left-color: #27ae60; }
 .menu-card--blue  { border-left-color: #2980b9; }
+.menu-card--purple { border-left-color: #8e44ad; }
+.menu-card--orange { border-left-color: #f39c12; }
 
 .menu-card:hover {
   transform: translateY(-4px);

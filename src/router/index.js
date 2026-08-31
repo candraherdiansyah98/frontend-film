@@ -7,23 +7,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 // Import semua halaman (views)
-import HomeView     from '../views/HomeView.vue'
-import DetailFilm   from '../views/DetailFilm.vue'
-import LoginView    from '../views/LoginView.vue'
-import DashboardView from '../views/DashboardView.vue'
-import TambahFilm   from '../views/TambahFilm.vue'
-import KelolaFilm   from '../views/KelolaFilm.vue'
-import EditFilm     from '../views/EditFilm.vue'
+import HomeView     from '../views/Public/HomeView.vue'
+import DetailFilm   from '../views/Public/DetailFilm.vue'
+import LoginView    from '../views/Auth/LoginView.vue'
+import DashboardView from '../views/Admin/DashboardView.vue'
+import TambahFilm   from '../views/Admin/Film/TambahFilm.vue'
+import KelolaFilm   from '../views/Admin/Film/KelolaFilm.vue'
+import EditFilm     from '../views/Admin/Film/EditFilm.vue'
 
 // Import Genre views
-import KelolaGenre  from '../views/Genre/KelolaGenre.vue'
-import TambahGenre  from '../views/Genre/TambahGenre.vue'
-import EditGenre    from '../views/Genre/EditGenre.vue'
+import KelolaGenre  from '../views/Admin/Genre/KelolaGenre.vue'
+import TambahGenre  from '../views/Admin/Genre/TambahGenre.vue'
+import EditGenre    from '../views/Admin/Genre/EditGenre.vue'
 
 // Import Aktor views
-import KelolaAktor  from '../views/Aktor/KelolaAktor.vue'
-import TambahAktor  from '../views/Aktor/TambahAktor.vue'
-import EditAktor    from '../views/Aktor/EditAktor.vue'
+import KelolaAktor  from '../views/Admin/Aktor/KelolaAktor.vue'
+import TambahAktor  from '../views/Admin/Aktor/TambahAktor.vue'
+import EditAktor    from '../views/Admin/Aktor/EditAktor.vue'
 
 const routes = [
   // Halaman publik (bisa diakses tanpa login)
